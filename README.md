@@ -1,15 +1,16 @@
-DX7 Synth
+DXperiment7 Synth
 =================
 
 ![](http://voices.washingtonpost.com/postrock/yamaha-dx-7.jpg)
 
-DX7 FM synthesis using the Web Audio and Web MIDI API. Works in Chrome and Firefox.
-Use a MIDI or QWERTY keyboard to play the synth.
+DXperiment7 FM synthesis using the Web Audio and Web MIDI API. Works in Chrome and Firefox.
+Use a MIDI or QWERTY keyboard to play the synth. Trying new algorithms and maybe more. (Subtractive post Osc processing?!?!)
 
 [Live demo](http://mmontag.github.io/dx7-synth-js/)
 
 Many thanks to:
 
+- MMONTAG - for this groundbreaking work into the web version.
 - John Chowning and Yamaha
 - Sean Bolton, author of Hexter, a DSSI DX7 modeler
 - Phil Cowans, author of Javascript-DX7 music hackday prototype https://github.com/philcowans/Javascript-DX7
