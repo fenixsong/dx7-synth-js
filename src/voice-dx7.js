@@ -63,7 +63,11 @@ var ALGORITHMS = [
 	{ outputMix: [0,1,2,4],     modulationMatrix: [[], [], [3], [], [5], [5]] },      //29
 	{ outputMix: [0,1,2,5],     modulationMatrix: [[], [], [3], [4], [4], []] },      //30
 	{ outputMix: [0,1,2,3,4],   modulationMatrix: [[], [], [], [], [5], [5]] },       //31
-	{ outputMix: [0,1,2,3,4,5], modulationMatrix: [[], [], [], [], [], [5]] }         //32
+	{ outputMix: [0,1,2,3,4,5], modulationMatrix: [[], [], [], [], [], [5]] },         //32
+
+	{ outputMix: [0,1], modulationMatrix: [[2,3], [2,3], [4,5], [4,5], [4], []] },         //33...or Digitone Algorithm 6 ;) but second tier of XFM
+	{ outputMix: [0,2,4], modulationMatrix: [[1], [1], [3], [3], [5], [5]] },         //34...3outs, 3 modu's each feedingback
+	{ outputMix: [0], modulationMatrix: [[1,2], [2], [3,4], [4], [5], [5]] }				//35.... a wavey tree. total experiment
 ];
 
 var params = {};
