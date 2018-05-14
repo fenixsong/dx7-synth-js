@@ -326,7 +326,7 @@ app.controller('MidiCtrl', ['$scope', '$http', function($scope, $http) {
 
 	this.onMidiPlay = function() {
 		$http.get(this.midiFiles[this.midiFileIndex], {responseType: "arraybuffer"})
-			.success(function(data) {
+			.then(function(data) {
 				console.log("Loaded %d bytes.", data.byteLength);
 				var midiFile = new MIDIFile(data);
 				self.midiPlayer.load(midiFile);
@@ -509,7 +509,7 @@ app.controller('PresetCtrl', ['$scope', '$localStorage', '$http', function ($sco
 	});
 
 	$http.get('roms/ROM1A.SYX')
-		.success(function(data) {
+		.then(function(data) {
 			self.basePresets = SysexDX7.loadBank(data);
 			self.$storage = $localStorage;
 			self.presets = [];
@@ -589,3 +589,4 @@ app.controller('PresetCtrl', ['$scope', '$localStorage', '$http', function ($sco
 	}
 
 }]);
+
