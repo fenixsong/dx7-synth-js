@@ -21,7 +21,7 @@ var SysexDX7 = {
 	extractPatchFromRom: function (bankData, patchId) {
 		var dataStart = 128 * patchId + 6;
 		var dataEnd = dataStart + 128;
-		var voiceData = bankData.substring(dataStart, dataEnd);
+		var voiceData = bankData.data.substring(dataStart, dataEnd);
 		var operators = [{},{},{},{},{},{}];
 
 		for (var i = 5; i >= 0; --i) {
